@@ -1,0 +1,95 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor{
+    background-color: rgba(95, 158, 160, 1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor div {
+    background-color: rgb(144, 135, 207);
+}
+
+.cuadro {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(38, 38, 110);
+    position: relative;
+}
+
+.cuadro div {
+    background-color: rgba(220, 220, 220, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     font-size: 100px;
+}
+
+.cuadro div:hover {
+    background-color: rgba(149, 182, 243, 1);
+    cursor: pointer;
+}
+
+button {
+    padding: 20px 15px;
+    background-color: indianred;
+    color: black;
+    outline: none;
+    border: 0px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: brown;
+}
+
+
+.lineContainer {
+    position: relative;
+}
+
+
+#linea {
+    position: absolute;
+    display: block;
+    background-color: black;
+}
+
+.lineHorizontal {
+    position: absolute;
+    display: block;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    width: 650px;
+    top: 90px;
+    left: 0px;
+}
+
+.lineVertical {
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    width: 15px;
+    top: 0px;
+    left: 0px;
+}
